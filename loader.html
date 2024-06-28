@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loader</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            border: 20px solid black;
+            border-top: 20px solid lightsalmon;
+            border-radius: 50%;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation-name: namdev;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            display: flex;
+            margin: auto;
+            margin-top: 100px;
+        }
+        body{
+            background-color: rgb(172, 148, 148);
+        }
+        #element{
+          text-align: center;
+          font-size: 45px;
+         margin-left: 600px;
+         margin-top: 30px;
+         color: greenyellow;
+        }
+        @keyframes namdev{
+            from{
+                transform:rotate(0deg);
+
+            }
+            to{
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+    </div>
+     <span id="element" class=""></span>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Still Loading', 'Loading....................', ],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
